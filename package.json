@@ -1,0 +1,21 @@
+{
+  "name": "fuckyoujewelry.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html -d docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haykkh/fuckyoujewelry.com.git"
+  },
+  "keywords": [],
+  "author": "haykkh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haykkh/fuckyoujewelry.com/issues"
+  },
+  "homepage": "https://github.com/haykkh/fuckyoujewelry.com#readme"
+}
