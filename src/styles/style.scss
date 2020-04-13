@@ -11,16 +11,17 @@ body {
 }
 
 .email {
-	width: 15em;
-	height: 2em;
+	width: 17em;
+	height: 4em;
 	
 	position: absolute;
 	top: 30%;
 	left: 50%;
 
-	margin: -1em 0 0 -7.5em;
+	margin: -1.5em 0 0 -8em;
 
 	input {
+		width: 15em;
 		text-align: center;
 		background-color: rgb(241, 70, 104);
 		color: white;
