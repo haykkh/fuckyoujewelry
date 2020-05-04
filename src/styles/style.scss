@@ -70,7 +70,7 @@ body {
 
 }
 
-.email {
+.email-form {
 	width: 17rem;
 	height: 4rem;
 	
@@ -94,5 +94,9 @@ body {
 		&::placeholder {
 			color: gainsboro;
 		}
+	}
+
+	label {
+		display: none;
 	}
 }
