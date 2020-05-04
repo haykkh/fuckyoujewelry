@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="styles/style.scss">
 </head>
 <body>
+    <script>
+        const body = document.getElementsByTagName('body')
+        const width = (body[0].offsetWidth - window.innerWidth) / 2
+        const height = (body[0].offsetHeight - window.innerHeight) / 2
+        window.scrollTo(width, height)
+    </script>
+
     <div class="email">
         <input type="email" placeholder="fuck@you.com">
     </div>
