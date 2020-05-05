@@ -9,14 +9,30 @@
 <body>
     <script>
         const body = document.getElementsByTagName('body')
-        const width = (body[0].offsetWidth - window.innerWidth) / 2
-        const height = (body[0].offsetHeight - window.innerHeight) / 2
-        window.scrollTo(width, height)
+        const middle_horizontal = (body[0].offsetWidth - window.innerWidth) / 2
+        const middle_vertical = (body[0].offsetHeight - window.innerHeight) / 2
+        window.scrollTo(middle_horizontal, middle_vertical)
+
+        const scrollToInquiries = () => {
+            const width = middle_horizontal + (0.75 * (846/1122) * window.innerHeight)
+            const height = middle_vertical - (0.75 * window.innerHeight)
+
+            window.scrollTo(width, height)
+        }
+
     </script>
 
-    <div class="email-form">
-        <input type="email" placeholder="fuck@you.com" id="email">
-        <label for="email">Enter your email</label>
+    <div id="inquiries">
+        <span>
+            For inquiries email<br>
+            fuck@you.com
+        </span>
     </div>
+
+    <button id="inquiries-button" type="button" onclick="scrollToInquiries()">
+        Inquiries
+    </button>
+
+
 </body>
 </html>
