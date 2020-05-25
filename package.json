@@ -1,5 +1,5 @@
 {
-  "name": "fuckyoujewelry.com",
+  "name": "thehoundsstudio",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.html",
@@ -9,13 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haykkh/fuckyoujewelry.com.git"
+    "url": "git+https://github.com/haykkh/thehoundsstudio.git"
   },
   "keywords": [],
   "author": "haykkh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/haykkh/fuckyoujewelry.com/issues"
+    "url": "https://github.com/haykkh/thehoundsstudio/issues"
   },
-  "homepage": "https://github.com/haykkh/fuckyoujewelry.com#readme"
+  "homepage": "https://github.com/haykkh/thehoundsstudio#readme",
+  "dependencies": {
+    "zenscroll": "^4.0.2"
+  }
 }
