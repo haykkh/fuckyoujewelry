@@ -79,20 +79,21 @@ body {
 #classbg {
 	background-image: url(../img/classbg.jpg);
 	background-position-x: center;
-	background-size: contain;
+	background-size: calc((846/1142) * 100vh);
 	background-repeat: repeat-x;
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: calc(4*(1732/1142) * 100vh);
+	width: calc(8*(846/1142) * 100vh);
 	height: 100vh;
-	animation: slideshow 10s linear infinite;
+	animation: slideshow 40s linear infinite;
 	transform: translate3d(0,0,0);
+	will-change: transform;
 }
 
 @keyframes slideshow {
 	100% { 
-		transform: translateX(calc(2*(1732/1142) * -100vh)); 
+		transform: translateX(calc(4*(846/1142) * -100vh)); 
 	}
 }
 
@@ -137,6 +138,16 @@ body {
 
 	cursor: pointer;
 }
+
+#catalog-button:hover {
+	background-color: #24c2f2;
+
+	&~ #class > #classbg {
+		animation-play-state:paused;
+		background-position: center -100vh;
+	}
+}
+
 
 #inquiries {
 	background-color: rgb(241, 70, 104);
